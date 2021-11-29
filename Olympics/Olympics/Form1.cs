@@ -188,5 +188,13 @@ namespace Olympics
                 aktualisSor++;
             }
         }
+
+        private void comboBoxEv_SelectedValueChanged(object sender, EventArgs e)
+        {
+            var filteredResults = from x in results
+                                  where x.Year == (int)comboBoxEv.SelectedItem
+                                  select x;
+            dataGridView1.DataSource = filteredResults.ToList();
+        }
     }
 }

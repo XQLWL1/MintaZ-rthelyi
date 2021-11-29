@@ -43,6 +43,7 @@ namespace Olympics
             this.comboBoxEv.Name = "comboBoxEv";
             this.comboBoxEv.Size = new System.Drawing.Size(121, 21);
             this.comboBoxEv.TabIndex = 0;
+            this.comboBoxEv.SelectedValueChanged += new System.EventHandler(this.comboBoxEv_SelectedValueChanged);
             // 
             // label1
             // 
