@@ -22,8 +22,14 @@ namespace Olympics
             InitializeComponent();
 
             Betolt("Summer_olympic_Medals.csv");
+            ComboFeltolt();
         }
 
+        private void ComboFeltolt()
+        {
+            var years = (from x in results orderby x.Year select x.Year).Distinct();
+            comboBoxEv.DataSource = years.ToList();
+        }
 
         void Betolt(string fajlnev)
         {

@@ -1,0 +1,11 @@
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\obj\Debug\Olympics.csprojAssemblyReference.cache
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\obj\Debug\Olympics.Form1.resources
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\obj\Debug\Olympics.Properties.Resources.resources
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\obj\Debug\Olympics.csproj.GenerateResource.cache
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\obj\Debug\Olympics.csproj.CoreCompileInputs.cache
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\bin\Debug\Summer_olympic_Medals.csv
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\bin\Debug\Olympics.exe.config
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\bin\Debug\Olympics.exe
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\bin\Debug\Olympics.pdb
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\obj\Debug\Olympics.exe
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\obj\Debug\Olympics.pdb

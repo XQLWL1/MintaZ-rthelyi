@@ -29,21 +29,45 @@ namespace Olympics
         /// </summary>
         private void InitializeComponent()
         {
+            this.comboBoxEv = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // comboBoxEv
+            // 
+            this.comboBoxEv.FormattingEnabled = true;
+            this.comboBoxEv.Location = new System.Drawing.Point(38, 7);
+            this.comboBoxEv.Name = "comboBoxEv";
+            this.comboBoxEv.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxEv.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Év";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBoxEv);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox comboBoxEv;
+        private System.Windows.Forms.Label label1;
     }
 }
 
