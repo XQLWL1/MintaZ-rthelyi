@@ -9,3 +9,4 @@ C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\bin\Debug\Ol
 C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\bin\Debug\Olympics.pdb
 C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\obj\Debug\Olympics.exe
 C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\obj\Debug\Olympics.pdb
+C:\Users\Vivi\source\repos\XQLWL1\MintaZárthelyi\Olympics\Olympics\obj\Debug\Olympics.csproj.ResolveComReference.cache

@@ -7,9 +7,12 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
+
 
 namespace Olympics
 {
@@ -114,6 +117,76 @@ namespace Olympics
 
             }
 
+        }
+
+        Excel.Application xlApp;
+        Excel.Workbook xlWB;
+        Excel.Worksheet xlSheet;
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                xlApp = new Excel.Application();
+                xlWB = xlApp.Workbooks.Add(Missing.Value);
+                xlSheet = xlWB.ActiveSheet;
+
+                //Adatok excelbe írását valósítja meg a függvény
+                ExcelFeltolt();
+
+
+                xlApp.Visible = true;
+                xlApp.UserControl = true;
+            }
+            catch (Exception exception)
+            {
+
+                MessageBox.Show(exception.Message);
+
+                xlWB.Close(false, Type.Missing, Type.Missing);
+
+                xlApp.Quit();
+
+                xlWB = null;
+                xlApp = null;
+            }
+        }
+
+        private void ExcelFeltolt()
+        {
+            //A kimeneti állomány fejlécei rendre a következők: Helyezés, Ország, Arany, Ezüst, Bronz
+            var headers = new string[]
+            {
+                "Helyezés",
+                "Ország",
+                "Arany",
+                "Ezüst",
+                "Bronz"
+            };
+
+            for (int i = 0; i < headers.Length; i++)
+            {
+                xlSheet.Cells[1, i + 1] = headers[i];
+            }
+
+            var filteredResults = from x in results
+                                  where x.Year == (int)comboBoxEv.SelectedItem
+                                  orderby x.Position
+                                  select x;
+
+            int aktualisSor = 2;
+            foreach (var item in filteredResults)
+            {
+                xlSheet.Cells[aktualisSor, 1] = item.Position;
+                xlSheet.Cells[aktualisSor, 2] = item.Country;
+
+                for (int i = 0; i < 3; i++)
+                {
+                    xlSheet.Cells[aktualisSor, 3+i] = item.Medals[i];
+                }
+
+                aktualisSor++;
+            }
         }
     }
 }
